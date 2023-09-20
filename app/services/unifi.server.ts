@@ -34,16 +34,16 @@ class UnifiServer {
 
   public async turnOffInternet(): Promise<void> {
     console.log('Turning off internet');
-    //const rule = await this.getRule();
-    //rule.enabled = true;
-    //await rule.save();
+    const rule = await this.getRule();
+    rule.enabled = true;
+    await rule.save();
   }
 
   public async turnOnInternet(): Promise<void> {
     console.log('Turning on internet');
-    //const rule = await this.getRule();
-    //rule.enabled = false;
-    //await rule.save();
+    const rule = await this.getRule();
+    rule.enabled = false;
+    await rule.save();
   }
 }
 
