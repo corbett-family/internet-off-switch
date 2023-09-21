@@ -34,7 +34,7 @@ const appConfig: AppConfig = {
   storage: {
     basePath: process.env.STORAGE_DIR!,
   },
-  timezone: process.env.TIMEZONE!,
+  timezone: process.env.TZ!,
   allowedEmails: process.env.ALLOWED_EMAILS!.split(','),
   switchOffHour: parseInt(process.env.SWITCH_OFF_HOUR!),
   switchOnHour: parseInt(process.env.SWITCH_ON_HOUR!),

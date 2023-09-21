@@ -31,7 +31,11 @@ import { useState } from 'react';
 import { state } from '~/services/switch-state.server';
 
 export const meta: V2_MetaFunction = () => {
-  return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }, ...standardMeta];
+  return [
+    { title: 'Internet Shutoff Switch' },
+    { name: 'description', content: 'Controls for turning the internet off at night' },
+    ...standardMeta,
+  ];
 };
 
 export let loader = async ({ request }: LoaderArgs) => {
