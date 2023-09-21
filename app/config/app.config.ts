@@ -46,4 +46,16 @@ const appConfig: AppConfig = {
   },
 };
 
+console.log(
+  `client id starts with: ${appConfig.google.clientID.slice(0, 5)} and ends with ${appConfig.google.clientID.slice(
+    -5,
+  )}`,
+);
+console.log(
+  `client secret starts with: ${appConfig.google.clientSecret.slice(
+    0,
+    5,
+  )} and ends with ${appConfig.google.clientSecret.slice(-5)}`,
+);
+
 export { appConfig, type AppConfig };
